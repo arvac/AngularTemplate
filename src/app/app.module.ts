@@ -11,6 +11,7 @@ import { ItemComponent } from './page/item/item.component';
 //rutas
 import { AppRouting } from './app-routing.module';
 
+import {HttpClientModule}from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { AppRouting } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRouting
+    AppRouting,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

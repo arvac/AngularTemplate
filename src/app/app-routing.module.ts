@@ -11,7 +11,7 @@ const app_routes :Routes = [
 ];
 @NgModule({
     imports:[
-    RouterModule.forRoot(app_routes)
+    RouterModule.forRoot(app_routes,{useHash:true})//el hash se usa cuando no tenemos acceso al directorio htaccess
     ],
     exports:[
         RouterModule
