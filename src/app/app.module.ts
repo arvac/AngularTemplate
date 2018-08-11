@@ -12,6 +12,7 @@ import { ItemComponent } from './page/item/item.component';
 import { AppRouting } from './app-routing.module';
 
 import {HttpClientModule}from '@angular/common/http';
+import { SearchComponent } from './page/search/search.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import {HttpClientModule}from '@angular/common/http';
     FooterComponent,
     PortafolioComponent,
     AboutComponent,
-    ItemComponent
+    ItemComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

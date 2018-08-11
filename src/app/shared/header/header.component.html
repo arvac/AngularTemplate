@@ -19,7 +19,17 @@
         </li>
         <li class="rk-menu__item"><a routerLink="" class="rk-menu__link">Portfolio</a>
           <nav class="rk-menu__sub">
-            
+            <div class="rk-search">
+              <input type="text" 
+              (keyup.enter)="buscarproducto( txtbuscar.value )"
+              placeholder="buscar" id="urku-search" class="rk-search-field" 
+              #txtbuscar>
+              <label for="urku-search">
+                <svg>
+                  <use xlink:href="assets/img/symbols.svg#icon-search"></use>
+                </svg>
+              </label>
+            </div>
           </nav>
         </li>
         <li class="rk-menu__item"><a  routerLink="item" class="rk-menu__link">Blog</a>
@@ -28,14 +38,7 @@
         <li class="rk-menu__item"><a  routerLink="about" class="rk-menu__link">Contact Us</a>
         </li>
       </ul>
-      <form class="rk-search">
-        <input type="text" placeholder="Search" id="urku-search" class="rk-search-field">
-        <label for="urku-search">
-          <svg>
-            <use xlink:href="assets/img/symbols.svg#icon-search"></use>
-          </svg>
-        </label>
-      </form>
+     
     </nav>
   </div>
 </header>
